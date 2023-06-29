@@ -1,0 +1,18 @@
+<div class="col-md-6 offset-md-3">
+    <form (ngSubmit)="userLogin()">
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+            <label class="form-label" for="form2Example1">Email address</label>
+            <input type="email" id="userId" [(ngModel)]="user.userId" name="userId" class="form-control" />
+        </div>
+
+        <!-- Password input -->
+        <div class="form-outline mb-4">
+            <label class="form-label" for="form2Example2">Password</label>
+            <input type="password" [(ngModel)]="user.password" id="password" name="password" class="form-control" />
+        </div>
+
+        <!-- Submit button -->
+        <button type="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
+    </form>
+</div>
